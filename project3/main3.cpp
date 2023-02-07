@@ -162,6 +162,8 @@ int main() {
           //Print_Buffers(buffer_size);
           //SortMain("Attributes You Want");
           Sort_in_Main_Memory(run_counter);
+//========Creates 18 files with 22 people 15 people not in file the 
+//========the other 15 are on buffers[] not acounting for those at the moment
           //printf("File Created run%d.csv\n",run_counter);
           run_counter++;
           // After sorting, start again. Clear memory and put the current tuple into main memory.
@@ -183,7 +185,8 @@ int main() {
   // Pseudocode
   //bool flag_sorting_done = false;
   //while(!flag_sorting_done){
-    
+  //==========Only returns 24 people and the 24th is the same name and age as the 23rd
+  //==========the salary being passed from the created files into the sorted file are all 0  
       Merge_Runs_in_Main_Memory(run_counter, emp_file_size);
   //    break;
   //}
